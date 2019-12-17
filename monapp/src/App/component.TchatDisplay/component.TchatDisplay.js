@@ -1,20 +1,11 @@
-import React from './node_modules/react';
+import React from 'react';
+
 import './component.TchatDisplay.css';
-import { render } from './node_modules/react-dom';
 
-// function ChatDisplay (props) {
-//     return (
-//         <div className="ChatDisplay">
-//             <label htmlFor="message" className="col-sm-2 col-form-label">Message reçu</label>
-//             <div className="col-sm-10">
-           
-//             </div>
-//       </div>
+import TchatConsole from '../component.TchatConsole/component.TchatConsole';
+import TchatInput from '../component.TchatInput/component.TchatInput';
+import TchatUsers from '../component.TchatUser/component.TchatUsers';
 
-//     );
-// }
-
-// export default ChatDisplay; 
 
 export default class TchatDisplay extends React.Component{
     constructor(props){
@@ -27,7 +18,11 @@ export default class TchatDisplay extends React.Component{
     }
     render(){
         return(<div className ="TchatDisplay">
-            Hello le Tchat            
+              
+            <TchatConsole></TchatConsole>  
+            <TchatInput></TchatInput> 
+            <TchatUsers>    </TchatUsers>
+                
         </div>
         
         );

@@ -12,10 +12,8 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Users users={_users}></Users>
-      <User unUser={{nom:"Bon",prenom:"Jean",serviceId:0}}></User>
-      
-       
-     
+      <User unUser={{nom:"Bon",prenom:"Jean",serviceId:0}}></User>    
+            
     </div>
   );
 }
